@@ -10,9 +10,7 @@
 		B36183152C52F1B600C1720B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36183142C52F1B600C1720B /* AppDelegate.swift */; };
 		B36183172C52F1B600C1720B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36183162C52F1B600C1720B /* SceneDelegate.swift */; };
 		B361831E2C52F1BA00C1720B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B361831D2C52F1BA00C1720B /* Assets.xcassets */; };
-		B361832C2C52F1BA00C1720B /* crypto_exchange_appTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B361832B2C52F1BA00C1720B /* crypto_exchange_appTests.swift */; };
-		B36183362C52F1BA00C1720B /* crypto_exchange_appUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36183352C52F1BA00C1720B /* crypto_exchange_appUITests.swift */; };
-		B36183382C52F1BA00C1720B /* crypto_exchange_appUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36183372C52F1BA00C1720B /* crypto_exchange_appUITestsLaunchTests.swift */; };
+		B361832C2C52F1BA00C1720B /* ExchangeListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B361832B2C52F1BA00C1720B /* ExchangeListTests.swift */; };
 		B361834B2C52F26E00C1720B /* ExchangeListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36183462C52F26E00C1720B /* ExchangeListPresenter.swift */; };
 		B361834C2C52F26E00C1720B /* ExchangeListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36183472C52F26E00C1720B /* ExchangeListRouter.swift */; };
 		B361834D2C52F26E00C1720B /* ExchangeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36183482C52F26E00C1720B /* ExchangeListViewController.swift */; };
@@ -30,17 +28,11 @@
 		B36183752C532EB500C1720B /* ExchangeDetailsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36183702C532EB500C1720B /* ExchangeDetailsInteractor.swift */; };
 		B36183762C532EB500C1720B /* ExchangeDetailsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36183712C532EB500C1720B /* ExchangeDetailsModel.swift */; };
 		B36183782C53D13200C1720B /* DateFormatter+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36183772C53D13200C1720B /* DateFormatter+Extension.swift */; };
+		B361837B2C53D53200C1720B /* NetworkServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = B361837A2C53D53200C1720B /* NetworkServiceMock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		B36183282C52F1BA00C1720B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B36183092C52F1B600C1720B /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B36183102C52F1B600C1720B;
-			remoteInfo = crypto_exchange_app;
-		};
-		B36183322C52F1BA00C1720B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B36183092C52F1B600C1720B /* Project object */;
 			proxyType = 1;
@@ -56,10 +48,7 @@
 		B361831D2C52F1BA00C1720B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B36183222C52F1BA00C1720B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B36183272C52F1BA00C1720B /* crypto_exchange_appTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = crypto_exchange_appTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B361832B2C52F1BA00C1720B /* crypto_exchange_appTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = crypto_exchange_appTests.swift; sourceTree = "<group>"; };
-		B36183312C52F1BA00C1720B /* crypto_exchange_appUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = crypto_exchange_appUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B36183352C52F1BA00C1720B /* crypto_exchange_appUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = crypto_exchange_appUITests.swift; sourceTree = "<group>"; };
-		B36183372C52F1BA00C1720B /* crypto_exchange_appUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = crypto_exchange_appUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B361832B2C52F1BA00C1720B /* ExchangeListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeListTests.swift; sourceTree = "<group>"; };
 		B36183462C52F26E00C1720B /* ExchangeListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeListPresenter.swift; sourceTree = "<group>"; };
 		B36183472C52F26E00C1720B /* ExchangeListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeListRouter.swift; sourceTree = "<group>"; };
 		B36183482C52F26E00C1720B /* ExchangeListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeListViewController.swift; sourceTree = "<group>"; };
@@ -74,6 +63,7 @@
 		B36183702C532EB500C1720B /* ExchangeDetailsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeDetailsInteractor.swift; sourceTree = "<group>"; };
 		B36183712C532EB500C1720B /* ExchangeDetailsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeDetailsModel.swift; sourceTree = "<group>"; };
 		B36183772C53D13200C1720B /* DateFormatter+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+Extension.swift"; sourceTree = "<group>"; };
+		B361837A2C53D53200C1720B /* NetworkServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceMock.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,13 +84,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B361832E2C52F1BA00C1720B /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -109,7 +92,6 @@
 			children = (
 				B36183132C52F1B600C1720B /* crypto_exchange_app */,
 				B361832A2C52F1BA00C1720B /* crypto_exchange_appTests */,
-				B36183342C52F1BA00C1720B /* crypto_exchange_appUITests */,
 				B36183122C52F1B600C1720B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -119,7 +101,6 @@
 			children = (
 				B36183112C52F1B600C1720B /* crypto_exchange_app.app */,
 				B36183272C52F1BA00C1720B /* crypto_exchange_appTests.xctest */,
-				B36183312C52F1BA00C1720B /* crypto_exchange_appUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -128,7 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				B36183522C52F39F00C1720B /* Network */,
-				B36183512C52F39400C1720B /* Extensions */,
+				B361837C2C53D96E00C1720B /* Commons */,
 				B36183442C52F24A00C1720B /* Scenes */,
 				B36183502C52F2F400C1720B /* Infrastructure */,
 				B361831D2C52F1BA00C1720B /* Assets.xcassets */,
@@ -140,18 +121,10 @@
 		B361832A2C52F1BA00C1720B /* crypto_exchange_appTests */ = {
 			isa = PBXGroup;
 			children = (
-				B361832B2C52F1BA00C1720B /* crypto_exchange_appTests.swift */,
+				B36183792C53D52400C1720B /* Mock */,
+				B361832B2C52F1BA00C1720B /* ExchangeListTests.swift */,
 			);
 			path = crypto_exchange_appTests;
-			sourceTree = "<group>";
-		};
-		B36183342C52F1BA00C1720B /* crypto_exchange_appUITests */ = {
-			isa = PBXGroup;
-			children = (
-				B36183352C52F1BA00C1720B /* crypto_exchange_appUITests.swift */,
-				B36183372C52F1BA00C1720B /* crypto_exchange_appUITestsLaunchTests.swift */,
-			);
-			path = crypto_exchange_appUITests;
 			sourceTree = "<group>";
 		};
 		B36183442C52F24A00C1720B /* Scenes */ = {
@@ -222,6 +195,22 @@
 			path = ExchangeDetails;
 			sourceTree = "<group>";
 		};
+		B36183792C53D52400C1720B /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				B361837A2C53D53200C1720B /* NetworkServiceMock.swift */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
+		B361837C2C53D96E00C1720B /* Commons */ = {
+			isa = PBXGroup;
+			children = (
+				B36183512C52F39400C1720B /* Extensions */,
+			);
+			path = Commons;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -265,24 +254,6 @@
 			productReference = B36183272C52F1BA00C1720B /* crypto_exchange_appTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		B36183302C52F1BA00C1720B /* crypto_exchange_appUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B36183412C52F1BA00C1720B /* Build configuration list for PBXNativeTarget "crypto_exchange_appUITests" */;
-			buildPhases = (
-				B361832D2C52F1BA00C1720B /* Sources */,
-				B361832E2C52F1BA00C1720B /* Frameworks */,
-				B361832F2C52F1BA00C1720B /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				B36183332C52F1BA00C1720B /* PBXTargetDependency */,
-			);
-			name = crypto_exchange_appUITests;
-			productName = crypto_exchange_appUITests;
-			productReference = B36183312C52F1BA00C1720B /* crypto_exchange_appUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -297,10 +268,6 @@
 						CreatedOnToolsVersion = 15.2;
 					};
 					B36183262C52F1BA00C1720B = {
-						CreatedOnToolsVersion = 15.2;
-						TestTargetID = B36183102C52F1B600C1720B;
-					};
-					B36183302C52F1BA00C1720B = {
 						CreatedOnToolsVersion = 15.2;
 						TestTargetID = B36183102C52F1B600C1720B;
 					};
@@ -326,7 +293,6 @@
 			targets = (
 				B36183102C52F1B600C1720B /* crypto_exchange_app */,
 				B36183262C52F1BA00C1720B /* crypto_exchange_appTests */,
-				B36183302C52F1BA00C1720B /* crypto_exchange_appUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -341,13 +307,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		B36183252C52F1BA00C1720B /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B361832F2C52F1BA00C1720B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -384,16 +343,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B361832C2C52F1BA00C1720B /* crypto_exchange_appTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B361832D2C52F1BA00C1720B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B36183382C52F1BA00C1720B /* crypto_exchange_appUITestsLaunchTests.swift in Sources */,
-				B36183362C52F1BA00C1720B /* crypto_exchange_appUITests.swift in Sources */,
+				B361837B2C53D53200C1720B /* NetworkServiceMock.swift in Sources */,
+				B361832C2C52F1BA00C1720B /* ExchangeListTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -404,11 +355,6 @@
 			isa = PBXTargetDependency;
 			target = B36183102C52F1B600C1720B /* crypto_exchange_app */;
 			targetProxy = B36183282C52F1BA00C1720B /* PBXContainerItemProxy */;
-		};
-		B36183332C52F1BA00C1720B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = B36183102C52F1B600C1720B /* crypto_exchange_app */;
-			targetProxy = B36183322C52F1BA00C1720B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -622,40 +568,6 @@
 			};
 			name = Release;
 		};
-		B36183422C52F1BA00C1720B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "crypto-exchange-app.crypto-exchange-appUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = crypto_exchange_app;
-			};
-			name = Debug;
-		};
-		B36183432C52F1BA00C1720B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "crypto-exchange-app.crypto-exchange-appUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = crypto_exchange_app;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -682,15 +594,6 @@
 			buildConfigurations = (
 				B361833F2C52F1BA00C1720B /* Debug */,
 				B36183402C52F1BA00C1720B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B36183412C52F1BA00C1720B /* Build configuration list for PBXNativeTarget "crypto_exchange_appUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B36183422C52F1BA00C1720B /* Debug */,
-				B36183432C52F1BA00C1720B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

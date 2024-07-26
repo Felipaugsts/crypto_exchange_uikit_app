@@ -32,7 +32,7 @@ class ExchangeListViewController: UIViewController {
     var presenter: ExchangeListPresenterProtocol
     var router: ExchangeListRouterProtocol
     
-    private var datasource: [ExchangeListModel.APIResponse] = []
+    public private(set) var datasource: [ExchangeListModel.APIResponse] = []
     
     // MARK: - Initializer
     
