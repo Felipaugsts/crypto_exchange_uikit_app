@@ -16,8 +16,4 @@ protocol ExchangeDetailsRouterProtocol: AnyObject {
 
 class ExchangeDetailsRouter: ExchangeDetailsRouterProtocol {
     weak var controller: UIViewController?
-
-    // MARK: - Initializer
-    
-    init() { }
 }

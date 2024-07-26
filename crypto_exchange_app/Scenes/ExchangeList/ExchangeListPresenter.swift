@@ -20,10 +20,6 @@ class ExchangeListPresenter: ExchangeListPresenterProtocol {
     
     weak var controller: ExchangeListViewControllerProtocol?
 
-    // MARK: - Initializer
-    
-    init() { }
-    
     // MARK: - Public Methods
     
     func presentScreenValues(values: [ExchangeListModel.APIResponse]) {

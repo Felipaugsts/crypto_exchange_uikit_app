@@ -58,7 +58,6 @@ class CustomExchangeCell: UICollectionViewCell {
         
         volumeTitleLabel.font = UIFont.systemFont(ofSize: 14)
         volumeTitleLabel.textColor = .lightGray
-        volumeTitleLabel.text = "Volume (1 hr)"
         volumeTitleLabel.numberOfLines = 1
         
         volumeLabel.font = UIFont.boldSystemFont(ofSize: 16)
@@ -95,6 +94,7 @@ class CustomExchangeCell: UICollectionViewCell {
         nameLabel.text = data.name ?? "N/A"
         exchangeIDLabel.text = "ID: \(data.exchange_id ?? "N/A")"
         websiteLabel.text = "Website: \(data.website ?? "N/A")"
+        volumeTitleLabel.text = "Volume (1 hr)"
         
         // Format volume with comma separator and add currency symbol
         if let volume = data.volume_1hrs_usd {

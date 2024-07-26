@@ -68,7 +68,7 @@ class ExchangeListViewController: UIViewController {
     }
     
     private func setupLayout() {
-        navigationItem.title = "Exchange"
+        navigationItem.title = "Exchanges"
         view.addSubview(collectionView)
         
         collectionView.snp.makeConstraints { make in
@@ -98,10 +98,9 @@ extension ExchangeListViewController: UICollectionViewDelegate, UICollectionView
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-           // Set the size of the cell here
-           let width = collectionView.frame.width - 20
-           return CGSize(width: width, height: 200)
-       }
+        let width = collectionView.frame.width - 20
+        return CGSize(width: width, height: 200)
+    }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CustomExchangeCell.identifier, for: indexPath) as? CustomExchangeCell else {
@@ -115,5 +114,10 @@ extension ExchangeListViewController: UICollectionViewDelegate, UICollectionView
         let exchange = datasource[indexPath.row]
         cell.setup(data: exchange)
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let exchange = datasource[indexPath.row]
+        router.routeToExchange(data: exchange)
     }
 }

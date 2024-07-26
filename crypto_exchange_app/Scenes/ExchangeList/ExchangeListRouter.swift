@@ -10,6 +10,8 @@ import UIKit
 
 protocol ExchangeListRouterProtocol: AnyObject {
     var controller: UIViewController? { get set }
+    
+    func routeToExchange(data: ExchangeListModel.APIResponse)
 }
 
 // MARK: - ExchangeListRouter Implementation
@@ -17,7 +19,8 @@ protocol ExchangeListRouterProtocol: AnyObject {
 class ExchangeListRouter: ExchangeListRouterProtocol {
     weak var controller: UIViewController?
 
-    // MARK: - Initializer
-    
-    init() { }
+    func routeToExchange(data: ExchangeListModel.APIResponse) {
+        let view = ExchangeDetailsViewController(exchangeData: data)
+        controller?.navigationController?.pushViewController(view, animated: true)
+    }
 }

@@ -10,6 +10,10 @@ import UIKit
 
 enum ExchangeDetailsModel {
     struct ScreenValues {
-        var example: String?
+        var exchange: String
+        var exchangeID: String
+        var website: String
+        var quote: String
+        var volume: String
     }
 }

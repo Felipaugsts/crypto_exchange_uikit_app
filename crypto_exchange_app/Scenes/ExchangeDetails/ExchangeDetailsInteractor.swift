@@ -11,21 +11,23 @@ import UIKit
 protocol ExchangeDetailsInteractorProtocol: AnyObject {
     var presenter: ExchangeDetailsPresenterProtocol? { get set }
     
-    func loadScreenValues()
+    func loadScreenValues(exchange: ExchangeListModel.APIResponse?)
 }
 
 // MARK: - ExchangeDetailsInteractor Implementation
 
 class ExchangeDetailsInteractor: ExchangeDetailsInteractorProtocol {
     weak var presenter: ExchangeDetailsPresenterProtocol?
+    
+    private var exchange: ExchangeListModel.APIResponse?
 
-    // MARK: - Initializer
-    
-    init() { }
-    
     // MARK: - Public Methods
     
-    func loadScreenValues() {
-        presenter?.presentScreenValues()
+    func loadScreenValues(exchange: ExchangeListModel.APIResponse?) {
+        guard let exchangeData = exchange else {
+            return
+        }
+        self.exchange = exchangeData
+        presenter?.presentScreenValues(exchange: exchangeData)
     }
 }

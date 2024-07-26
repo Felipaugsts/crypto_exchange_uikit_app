@@ -20,6 +20,7 @@ class ExchangeListInteractor: ExchangeListInteractorProtocol {
     weak var presenter: ExchangeListPresenterProtocol?
 
     var service: ServiceProviderProtocol
+    
     // MARK: - Initializer
     
     init(service: ServiceProviderProtocol = ServiceProvider.shared) {
@@ -40,7 +41,8 @@ class ExchangeListInteractor: ExchangeListInteractorProtocol {
                 self.presenter?.presentScreenValues(values: resp)
                 
             case .failure(let failure):
-                print(failure)
+                // handle error
+                break
             }
         }
     }

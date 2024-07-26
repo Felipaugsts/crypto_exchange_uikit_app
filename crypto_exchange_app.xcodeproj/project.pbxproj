@@ -29,6 +29,7 @@
 		B36183742C532EB500C1720B /* ExchangeDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B361836F2C532EB500C1720B /* ExchangeDetailsViewController.swift */; };
 		B36183752C532EB500C1720B /* ExchangeDetailsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36183702C532EB500C1720B /* ExchangeDetailsInteractor.swift */; };
 		B36183762C532EB500C1720B /* ExchangeDetailsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36183712C532EB500C1720B /* ExchangeDetailsModel.swift */; };
+		B36183782C53D13200C1720B /* DateFormatter+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36183772C53D13200C1720B /* DateFormatter+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,7 @@
 		B361836F2C532EB500C1720B /* ExchangeDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeDetailsViewController.swift; sourceTree = "<group>"; };
 		B36183702C532EB500C1720B /* ExchangeDetailsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeDetailsInteractor.swift; sourceTree = "<group>"; };
 		B36183712C532EB500C1720B /* ExchangeDetailsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeDetailsModel.swift; sourceTree = "<group>"; };
+		B36183772C53D13200C1720B /* DateFormatter+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,7 +127,8 @@
 		B36183132C52F1B600C1720B /* crypto_exchange_app */ = {
 			isa = PBXGroup;
 			children = (
-				B36183512C52F39400C1720B /* Config */,
+				B36183522C52F39F00C1720B /* Network */,
+				B36183512C52F39400C1720B /* Extensions */,
 				B36183442C52F24A00C1720B /* Scenes */,
 				B36183502C52F2F400C1720B /* Infrastructure */,
 				B361831D2C52F1BA00C1720B /* Assets.xcassets */,
@@ -182,12 +185,12 @@
 			path = Infrastructure;
 			sourceTree = "<group>";
 		};
-		B36183512C52F39400C1720B /* Config */ = {
+		B36183512C52F39400C1720B /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				B36183522C52F39F00C1720B /* Network */,
+				B36183772C53D13200C1720B /* DateFormatter+Extension.swift */,
 			);
-			path = Config;
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		B36183522C52F39F00C1720B /* Network */ = {
@@ -360,6 +363,7 @@
 			files = (
 				B361834B2C52F26E00C1720B /* ExchangeListPresenter.swift in Sources */,
 				B361834F2C52F26E00C1720B /* ExchangeListModel.swift in Sources */,
+				B36183782C53D13200C1720B /* DateFormatter+Extension.swift in Sources */,
 				B36183762C532EB500C1720B /* ExchangeDetailsModel.swift in Sources */,
 				B36183722C532EB500C1720B /* ExchangeDetailsPresenter.swift in Sources */,
 				B36183152C52F1B600C1720B /* AppDelegate.swift in Sources */,
