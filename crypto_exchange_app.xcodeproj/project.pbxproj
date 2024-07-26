@@ -9,13 +9,21 @@
 /* Begin PBXBuildFile section */
 		B36183152C52F1B600C1720B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36183142C52F1B600C1720B /* AppDelegate.swift */; };
 		B36183172C52F1B600C1720B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36183162C52F1B600C1720B /* SceneDelegate.swift */; };
-		B36183192C52F1B600C1720B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36183182C52F1B600C1720B /* ViewController.swift */; };
-		B361831C2C52F1B600C1720B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B361831A2C52F1B600C1720B /* Main.storyboard */; };
 		B361831E2C52F1BA00C1720B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B361831D2C52F1BA00C1720B /* Assets.xcassets */; };
-		B36183212C52F1BA00C1720B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B361831F2C52F1BA00C1720B /* LaunchScreen.storyboard */; };
 		B361832C2C52F1BA00C1720B /* crypto_exchange_appTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B361832B2C52F1BA00C1720B /* crypto_exchange_appTests.swift */; };
 		B36183362C52F1BA00C1720B /* crypto_exchange_appUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36183352C52F1BA00C1720B /* crypto_exchange_appUITests.swift */; };
 		B36183382C52F1BA00C1720B /* crypto_exchange_appUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36183372C52F1BA00C1720B /* crypto_exchange_appUITestsLaunchTests.swift */; };
+		B361834B2C52F26E00C1720B /* ExchangeListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36183462C52F26E00C1720B /* ExchangeListPresenter.swift */; };
+		B361834C2C52F26E00C1720B /* ExchangeListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36183472C52F26E00C1720B /* ExchangeListRouter.swift */; };
+		B361834D2C52F26E00C1720B /* ExchangeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36183482C52F26E00C1720B /* ExchangeListViewController.swift */; };
+		B361834E2C52F26E00C1720B /* ExchangeListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36183492C52F26E00C1720B /* ExchangeListInteractor.swift */; };
+		B361834F2C52F26E00C1720B /* ExchangeListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B361834A2C52F26E00C1720B /* ExchangeListModel.swift */; };
+		B36183542C52F3E200C1720B /* ServiceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36183532C52F3E200C1720B /* ServiceProvider.swift */; };
+		B36183572C52F6F800C1720B /* ServiceProviderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36183562C52F6F800C1720B /* ServiceProviderModel.swift */; };
+		B361835D2C530FE800C1720B /* KeychainSwift in Frameworks */ = {isa = PBXBuildFile; productRef = B361835C2C530FE800C1720B /* KeychainSwift */; };
+		B36183652C531DD600C1720B /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = B36183642C531DD600C1720B /* SnapKit */; };
+		B36183682C531E8D00C1720B /* CustomExchangeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36183672C531E8D00C1720B /* CustomExchangeCell.swift */; };
+		B361836B2C5324C000C1720B /* UIView-Shimmer in Frameworks */ = {isa = PBXBuildFile; productRef = B361836A2C5324C000C1720B /* UIView-Shimmer */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,16 +47,21 @@
 		B36183112C52F1B600C1720B /* crypto_exchange_app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = crypto_exchange_app.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B36183142C52F1B600C1720B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B36183162C52F1B600C1720B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B36183182C52F1B600C1720B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B361831B2C52F1B600C1720B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B361831D2C52F1BA00C1720B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		B36183202C52F1BA00C1720B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B36183222C52F1BA00C1720B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B36183272C52F1BA00C1720B /* crypto_exchange_appTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = crypto_exchange_appTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B361832B2C52F1BA00C1720B /* crypto_exchange_appTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = crypto_exchange_appTests.swift; sourceTree = "<group>"; };
 		B36183312C52F1BA00C1720B /* crypto_exchange_appUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = crypto_exchange_appUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B36183352C52F1BA00C1720B /* crypto_exchange_appUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = crypto_exchange_appUITests.swift; sourceTree = "<group>"; };
 		B36183372C52F1BA00C1720B /* crypto_exchange_appUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = crypto_exchange_appUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B36183462C52F26E00C1720B /* ExchangeListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeListPresenter.swift; sourceTree = "<group>"; };
+		B36183472C52F26E00C1720B /* ExchangeListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeListRouter.swift; sourceTree = "<group>"; };
+		B36183482C52F26E00C1720B /* ExchangeListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeListViewController.swift; sourceTree = "<group>"; };
+		B36183492C52F26E00C1720B /* ExchangeListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeListInteractor.swift; sourceTree = "<group>"; };
+		B361834A2C52F26E00C1720B /* ExchangeListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeListModel.swift; sourceTree = "<group>"; };
+		B36183532C52F3E200C1720B /* ServiceProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceProvider.swift; sourceTree = "<group>"; };
+		B36183562C52F6F800C1720B /* ServiceProviderModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceProviderModel.swift; sourceTree = "<group>"; };
+		B36183672C531E8D00C1720B /* CustomExchangeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomExchangeCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +69,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B361835D2C530FE800C1720B /* KeychainSwift in Frameworks */,
+				B361836B2C5324C000C1720B /* UIView-Shimmer in Frameworks */,
+				B36183652C531DD600C1720B /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,12 +115,10 @@
 		B36183132C52F1B600C1720B /* crypto_exchange_app */ = {
 			isa = PBXGroup;
 			children = (
-				B36183142C52F1B600C1720B /* AppDelegate.swift */,
-				B36183162C52F1B600C1720B /* SceneDelegate.swift */,
-				B36183182C52F1B600C1720B /* ViewController.swift */,
-				B361831A2C52F1B600C1720B /* Main.storyboard */,
+				B36183512C52F39400C1720B /* Config */,
+				B36183442C52F24A00C1720B /* Scenes */,
+				B36183502C52F2F400C1720B /* Infrastructure */,
 				B361831D2C52F1BA00C1720B /* Assets.xcassets */,
-				B361831F2C52F1BA00C1720B /* LaunchScreen.storyboard */,
 				B36183222C52F1BA00C1720B /* Info.plist */,
 			);
 			path = crypto_exchange_app;
@@ -127,6 +141,61 @@
 			path = crypto_exchange_appUITests;
 			sourceTree = "<group>";
 		};
+		B36183442C52F24A00C1720B /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				B36183452C52F25000C1720B /* ExchangeList */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		B36183452C52F25000C1720B /* ExchangeList */ = {
+			isa = PBXGroup;
+			children = (
+				B36183662C531E8100C1720B /* Views */,
+				B36183462C52F26E00C1720B /* ExchangeListPresenter.swift */,
+				B36183472C52F26E00C1720B /* ExchangeListRouter.swift */,
+				B36183482C52F26E00C1720B /* ExchangeListViewController.swift */,
+				B36183492C52F26E00C1720B /* ExchangeListInteractor.swift */,
+				B361834A2C52F26E00C1720B /* ExchangeListModel.swift */,
+			);
+			path = ExchangeList;
+			sourceTree = "<group>";
+		};
+		B36183502C52F2F400C1720B /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				B36183142C52F1B600C1720B /* AppDelegate.swift */,
+				B36183162C52F1B600C1720B /* SceneDelegate.swift */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		B36183512C52F39400C1720B /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				B36183522C52F39F00C1720B /* Network */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		B36183522C52F39F00C1720B /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				B36183532C52F3E200C1720B /* ServiceProvider.swift */,
+				B36183562C52F6F800C1720B /* ServiceProviderModel.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		B36183662C531E8100C1720B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B36183672C531E8D00C1720B /* CustomExchangeCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +212,11 @@
 			dependencies = (
 			);
 			name = crypto_exchange_app;
+			packageProductDependencies = (
+				B361835C2C530FE800C1720B /* KeychainSwift */,
+				B36183642C531DD600C1720B /* SnapKit */,
+				B361836A2C5324C000C1720B /* UIView-Shimmer */,
+			);
 			productName = crypto_exchange_app;
 			productReference = B36183112C52F1B600C1720B /* crypto_exchange_app.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +289,11 @@
 				Base,
 			);
 			mainGroup = B36183082C52F1B600C1720B;
+			packageReferences = (
+				B361835B2C530FE800C1720B /* XCRemoteSwiftPackageReference "keychain-swift" */,
+				B36183632C531DD600C1720B /* XCRemoteSwiftPackageReference "SnapKit" */,
+				B36183692C5324C000C1720B /* XCRemoteSwiftPackageReference "UIView-Shimmer" */,
+			);
 			productRefGroup = B36183122C52F1B600C1720B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -231,9 +310,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B36183212C52F1BA00C1720B /* LaunchScreen.storyboard in Resources */,
 				B361831E2C52F1BA00C1720B /* Assets.xcassets in Resources */,
-				B361831C2C52F1B600C1720B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +335,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B36183192C52F1B600C1720B /* ViewController.swift in Sources */,
+				B361834B2C52F26E00C1720B /* ExchangeListPresenter.swift in Sources */,
+				B361834F2C52F26E00C1720B /* ExchangeListModel.swift in Sources */,
 				B36183152C52F1B600C1720B /* AppDelegate.swift in Sources */,
+				B36183572C52F6F800C1720B /* ServiceProviderModel.swift in Sources */,
 				B36183172C52F1B600C1720B /* SceneDelegate.swift in Sources */,
+				B361834D2C52F26E00C1720B /* ExchangeListViewController.swift in Sources */,
+				B36183542C52F3E200C1720B /* ServiceProvider.swift in Sources */,
+				B36183682C531E8D00C1720B /* CustomExchangeCell.swift in Sources */,
+				B361834E2C52F26E00C1720B /* ExchangeListInteractor.swift in Sources */,
+				B361834C2C52F26E00C1720B /* ExchangeListRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,25 +379,6 @@
 			targetProxy = B36183322C52F1BA00C1720B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		B361831A2C52F1B600C1720B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B361831B2C52F1B600C1720B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		B361831F2C52F1BA00C1720B /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B36183202C52F1BA00C1720B /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		B36183392C52F1BA00C1720B /* Debug */ = {
@@ -446,7 +511,6 @@
 				INFOPLIST_FILE = crypto_exchange_app/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -473,7 +537,6 @@
 				INFOPLIST_FILE = crypto_exchange_app/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -601,6 +664,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B361835B2C530FE800C1720B /* XCRemoteSwiftPackageReference "keychain-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/evgenyneu/keychain-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 24.0.0;
+			};
+		};
+		B36183632C531DD600C1720B /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+		B36183692C5324C000C1720B /* XCRemoteSwiftPackageReference "UIView-Shimmer" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/omerfarukozturk/UIView-Shimmer.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B361835C2C530FE800C1720B /* KeychainSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B361835B2C530FE800C1720B /* XCRemoteSwiftPackageReference "keychain-swift" */;
+			productName = KeychainSwift;
+		};
+		B36183642C531DD600C1720B /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B36183632C531DD600C1720B /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		B361836A2C5324C000C1720B /* UIView-Shimmer */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B36183692C5324C000C1720B /* XCRemoteSwiftPackageReference "UIView-Shimmer" */;
+			productName = "UIView-Shimmer";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B36183092C52F1B600C1720B /* Project object */;
 }
