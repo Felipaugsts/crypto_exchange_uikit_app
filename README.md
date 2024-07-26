@@ -16,7 +16,7 @@ To run the application, follow these steps:
 1. **Clone the Repository:**
 
     ```bash
-    git clone https://github.com/yourusername/crypto_exchange_uikit_app.git
+    git clone https://github.com/Felipaugsts/crypto_exchange_uikit_app.git
     ```
 
 2. **Open the Project in Xcode:**
