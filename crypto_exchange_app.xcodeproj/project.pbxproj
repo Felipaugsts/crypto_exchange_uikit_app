@@ -24,6 +24,11 @@
 		B36183652C531DD600C1720B /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = B36183642C531DD600C1720B /* SnapKit */; };
 		B36183682C531E8D00C1720B /* CustomExchangeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36183672C531E8D00C1720B /* CustomExchangeCell.swift */; };
 		B361836B2C5324C000C1720B /* UIView-Shimmer in Frameworks */ = {isa = PBXBuildFile; productRef = B361836A2C5324C000C1720B /* UIView-Shimmer */; };
+		B36183722C532EB500C1720B /* ExchangeDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B361836D2C532EB500C1720B /* ExchangeDetailsPresenter.swift */; };
+		B36183732C532EB500C1720B /* ExchangeDetailsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B361836E2C532EB500C1720B /* ExchangeDetailsRouter.swift */; };
+		B36183742C532EB500C1720B /* ExchangeDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B361836F2C532EB500C1720B /* ExchangeDetailsViewController.swift */; };
+		B36183752C532EB500C1720B /* ExchangeDetailsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36183702C532EB500C1720B /* ExchangeDetailsInteractor.swift */; };
+		B36183762C532EB500C1720B /* ExchangeDetailsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36183712C532EB500C1720B /* ExchangeDetailsModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +67,11 @@
 		B36183532C52F3E200C1720B /* ServiceProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceProvider.swift; sourceTree = "<group>"; };
 		B36183562C52F6F800C1720B /* ServiceProviderModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceProviderModel.swift; sourceTree = "<group>"; };
 		B36183672C531E8D00C1720B /* CustomExchangeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomExchangeCell.swift; sourceTree = "<group>"; };
+		B361836D2C532EB500C1720B /* ExchangeDetailsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeDetailsPresenter.swift; sourceTree = "<group>"; };
+		B361836E2C532EB500C1720B /* ExchangeDetailsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeDetailsRouter.swift; sourceTree = "<group>"; };
+		B361836F2C532EB500C1720B /* ExchangeDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeDetailsViewController.swift; sourceTree = "<group>"; };
+		B36183702C532EB500C1720B /* ExchangeDetailsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeDetailsInteractor.swift; sourceTree = "<group>"; };
+		B36183712C532EB500C1720B /* ExchangeDetailsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeDetailsModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +154,7 @@
 		B36183442C52F24A00C1720B /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				B361836C2C532EA100C1720B /* ExchangeDetails */,
 				B36183452C52F25000C1720B /* ExchangeList */,
 			);
 			path = Scenes;
@@ -194,6 +205,18 @@
 				B36183672C531E8D00C1720B /* CustomExchangeCell.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		B361836C2C532EA100C1720B /* ExchangeDetails */ = {
+			isa = PBXGroup;
+			children = (
+				B361836D2C532EB500C1720B /* ExchangeDetailsPresenter.swift */,
+				B361836E2C532EB500C1720B /* ExchangeDetailsRouter.swift */,
+				B361836F2C532EB500C1720B /* ExchangeDetailsViewController.swift */,
+				B36183702C532EB500C1720B /* ExchangeDetailsInteractor.swift */,
+				B36183712C532EB500C1720B /* ExchangeDetailsModel.swift */,
+			);
+			path = ExchangeDetails;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -337,13 +360,18 @@
 			files = (
 				B361834B2C52F26E00C1720B /* ExchangeListPresenter.swift in Sources */,
 				B361834F2C52F26E00C1720B /* ExchangeListModel.swift in Sources */,
+				B36183762C532EB500C1720B /* ExchangeDetailsModel.swift in Sources */,
+				B36183722C532EB500C1720B /* ExchangeDetailsPresenter.swift in Sources */,
 				B36183152C52F1B600C1720B /* AppDelegate.swift in Sources */,
+				B36183732C532EB500C1720B /* ExchangeDetailsRouter.swift in Sources */,
 				B36183572C52F6F800C1720B /* ServiceProviderModel.swift in Sources */,
 				B36183172C52F1B600C1720B /* SceneDelegate.swift in Sources */,
 				B361834D2C52F26E00C1720B /* ExchangeListViewController.swift in Sources */,
+				B36183742C532EB500C1720B /* ExchangeDetailsViewController.swift in Sources */,
 				B36183542C52F3E200C1720B /* ServiceProvider.swift in Sources */,
 				B36183682C531E8D00C1720B /* CustomExchangeCell.swift in Sources */,
 				B361834E2C52F26E00C1720B /* ExchangeListInteractor.swift in Sources */,
+				B36183752C532EB500C1720B /* ExchangeDetailsInteractor.swift in Sources */,
 				B361834C2C52F26E00C1720B /* ExchangeListRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

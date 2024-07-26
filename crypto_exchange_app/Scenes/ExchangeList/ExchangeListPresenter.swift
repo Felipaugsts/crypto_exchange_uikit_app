@@ -17,7 +17,8 @@ protocol ExchangeListPresenterProtocol: AnyObject {
 // MARK: - ExchangeListPresenter Implementation
 
 class ExchangeListPresenter: ExchangeListPresenterProtocol {
-    public weak var controller: ExchangeListViewControllerProtocol?
+    
+    weak var controller: ExchangeListViewControllerProtocol?
 
     // MARK: - Initializer
     

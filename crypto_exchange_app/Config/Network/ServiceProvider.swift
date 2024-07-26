@@ -16,7 +16,7 @@ protocol ServiceProviderProtocol {
     func fetch<T: Decodable>(_ model: T.Type, endpoint: String, method: RequestHTTPMethod, completionHandler: @escaping (Result<T, APIError>) -> Void)
 }
 
-public class ServiceProvider: ServiceProviderProtocol {
+class ServiceProvider: ServiceProviderProtocol {
     private var keychain: KeychainSwift
     
     static var shared: ServiceProviderProtocol = ServiceProvider()

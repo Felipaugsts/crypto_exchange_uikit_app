@@ -1,20 +1,20 @@
 //
-//  ExchangeListRouter.swift
+//  ExchangeDetailsRouter.swift
 //  crypto_exchange_app
 //
 //  Created by Felipe Augusto Silva on 25/07/24.
 
 import UIKit
 
-// MARK: - ExchangeListRouter Protocol
+// MARK: - ExchangeDetailsRouter Protocol
 
-protocol ExchangeListRouterProtocol: AnyObject {
+protocol ExchangeDetailsRouterProtocol: AnyObject {
     var controller: UIViewController? { get set }
 }
 
-// MARK: - ExchangeListRouter Implementation
+// MARK: - ExchangeDetailsRouter Implementation
 
-class ExchangeListRouter: ExchangeListRouterProtocol {
+class ExchangeDetailsRouter: ExchangeDetailsRouterProtocol {
     weak var controller: UIViewController?
 
     // MARK: - Initializer

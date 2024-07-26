@@ -19,8 +19,8 @@ class ExchangeListViewController: UIViewController {
     // MARK: - Components
     
     lazy var collectionView: UICollectionView = {
-        let layout = UICollectionViewFlowLayout() // Create a layout
-        let collection = UICollectionView(frame: .zero, collectionViewLayout: layout) // Initialize with the layout
+        let layout = UICollectionViewFlowLayout()
+        let collection = UICollectionView(frame: .zero, collectionViewLayout: layout)
         collection.delegate = self
         collection.dataSource = self
         collection.register(CustomExchangeCell.self, forCellWithReuseIdentifier: CustomExchangeCell.identifier)
